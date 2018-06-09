@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 //import org.openqa.selenium.remote.server.handler.SendKeys;
 
@@ -13,8 +14,10 @@ import org.openqa.selenium.support.ui.Select;
 
 public class DemoforIE {
 
-	public static void main(String[] args) throws InterruptedException {
-		
+	//public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void f () throws InterruptedException
+		{
 		System.out.println("website demo");
 		System.setProperty("webdriver.chrome.driver","Resources/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
